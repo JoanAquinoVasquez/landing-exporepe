@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="font-body text-white/20 text-xs uppercase tracking-[0.2em]">
-            © 2026 XporePE
+            © 2026 XplorePE
           </p>
           <div className="flex items-center gap-2">
              <div className="w-1.5 h-1.5 rounded-full bg-rojo" />

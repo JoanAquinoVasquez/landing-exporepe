@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "XporePE — El Perú en tus manos",
+  title: "XplorePE — El Perú en tus manos",
   description: "Turismo inteligente en Perú. Rutas personalizadas, modo sin internet, comunidad local.",
 };
 

@@ -40,7 +40,7 @@ export default function Gamification() {
             <div className="space-y-6">
               {[
                 { title: 'Logros Únicos', desc: 'Desbloquea medallas exclusivas al visitar puntos históricos.', icon: Star },
-                { title: 'Puntos Xpore', desc: 'Acumula puntos canjeables en restaurantes y artesanos locales.', icon: CheckCircle },
+                { title: 'Puntos Xplore', desc: 'Acumula puntos canjeables en restaurantes y artesanos locales.', icon: CheckCircle },
                 { title: 'Ranking Nacional', desc: 'Demuestra que eres el mayor explorador del Perú.', icon: Trophy },
               ].map((item, i) => (
                 <motion.div 

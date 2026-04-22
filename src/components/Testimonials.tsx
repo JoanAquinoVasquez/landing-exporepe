@@ -7,9 +7,9 @@ import SectionWrapper from './SectionWrapper';
 
 export default function Testimonials() {
   const testimonials = [
-    { text: 'XporePE me permitió conocer lugares en Lambayeque que no aparecen en ninguna guía turística comercial. Es real e impactante.', author: 'Carlos Mendoza', role: 'Viajero' },
+    { text: 'XplorePE me permitió conocer lugares en Lambayeque que no aparecen en ninguna guía turística comercial. Es real e impactante.', author: 'Carlos Mendoza', role: 'Viajero' },
     { text: 'La función sin internet es un salvavidas en nuestras rutas por la sierra. Nunca nos sentimos perdidos.', author: 'Elena Paz', role: 'Exploradora' },
-    { text: 'Como negocio local, XporePE nos ha dado una visibilidad que nunca tuvimos antes. Las visitas han crecido un 40%.', author: 'Rosa Torres', role: 'Artesana' },
+    { text: 'Como negocio local, XplorePE nos ha dado una visibilidad que nunca tuvimos antes. Las visitas han crecido un 40%.', author: 'Rosa Torres', role: 'Artesana' },
   ];
 
   const [current, setCurrent] = useState(0);
