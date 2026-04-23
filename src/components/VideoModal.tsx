@@ -2,7 +2,10 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+
+import demoVideo from '@/assets/demo.mp4';
 
 interface VideoModalProps {
   isOpen: boolean;
@@ -10,9 +13,11 @@ interface VideoModalProps {
   videoSrc?: string;
 }
 
-export default function VideoModal({ isOpen, onClose, videoSrc = '/demo.mp4' }: VideoModalProps) {
-  // Prevent scrolling when modal is open
+export default function VideoModal({ isOpen, onClose, videoSrc = demoVideo }: VideoModalProps) {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -23,10 +28,12 @@ export default function VideoModal({ isOpen, onClose, videoSrc = '/demo.mp4' }: 
     };
   }, [isOpen]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -40,7 +47,7 @@ export default function VideoModal({ isOpen, onClose, videoSrc = '/demo.mp4' }: 
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-5xl aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10 flex items-center justify-center z-10"
+            className="relative h-[85vh] aspect-[9/19.5] bg-black rounded-[3rem] overflow-hidden shadow-2xl border-[8px] border-white/10 flex items-center justify-center z-10"
           >
             <button
               onClick={onClose}
@@ -50,7 +57,6 @@ export default function VideoModal({ isOpen, onClose, videoSrc = '/demo.mp4' }: 
             </button>
 
             {/* Video Element */}
-            {/* Si el archivo demo.mp4 se coloca en la carpeta public, esto lo reproducirá automáticamente */}
             <video 
               controls 
               autoPlay 
@@ -59,15 +65,10 @@ export default function VideoModal({ isOpen, onClose, videoSrc = '/demo.mp4' }: 
             >
               Tu navegador no soporta la etiqueta de video.
             </video>
-            
-            {/* Fallback Overlay text para indicar dónde poner el archivo */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-50 bg-black/50">
-                <span className="text-white font-display text-2xl tracking-widest uppercase mb-2">Espacio para Video Demostración</span>
-                <span className="text-white/60 font-body text-sm">demo.mp4</span>
-            </div>
           </motion.div>
         </div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }
