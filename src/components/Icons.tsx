@@ -22,7 +22,7 @@ export function Logo({ className = '', variant = 'dark', showIsotipo = true }: L
     <div className={`flex items-center gap-3 ${className}`}>
       {showIsotipo && <Isotipo variant={variant} size={32} />}
       <span className={`font-display text-2xl lg:text-3xl tracking-widest leading-none ${currentColors.text}`}>
-        <span className={currentColors.x}>X</span>PORE <span className={currentColors.pe}>PE</span>
+        <span className={currentColors.x}>X</span>PLORE <span className={currentColors.pe}>PE</span>
       </span>
     </div>
   );
