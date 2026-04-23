@@ -1,9 +1,8 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { Download, Play, Map, Trophy, ChevronDown } from 'lucide-react';
+import { Download, Play, ChevronDown } from 'lucide-react';
 import AndeanPattern from './AndeanPattern';
-import { Logo } from './Icons';
 import Image from 'next/image';
 import homescreenImg from '@/assets/homescreen.jpeg';
 import { useState } from 'react';
@@ -66,7 +65,7 @@ export default function Hero() {
               variants={item} 
               className="font-body text-white/60 text-lg lg:text-xl max-w-lg mb-12 leading-relaxed"
             >
-              "No están solos. En 2025, Lambayeque recibió más de 1 millón de turistas según GERCETUR, y la mayoría pasó por lo mismo. Un récord histórico... pero con una realidad que nadie quiere contar."
+              &quot;No están solos. En 2025, Lambayeque recibió más de 1 millón de turistas según GERCETUR, y la mayoría pasó por lo mismo. Un récord histórico... pero con una realidad que nadie quiere contar.&quot;
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap gap-5 mt-8">

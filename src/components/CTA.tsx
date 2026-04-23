@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Apple, PlayCircle, Rocket } from 'lucide-react';
+import { Apple, PlayCircle } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import AndeanPattern from './AndeanPattern';
 import FranjaPrehispanica from './FranjaPrehispanica';

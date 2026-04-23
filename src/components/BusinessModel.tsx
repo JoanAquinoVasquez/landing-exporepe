@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { User, Store, ArrowRight, TrendingUp } from 'lucide-react';
+import { User, Store, TrendingUp } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import AndeanPattern from './AndeanPattern';
 

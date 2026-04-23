@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Rocket, Activity, Users, Percent, Flame } from 'lucide-react';
+import { Activity, Users, Percent, Flame } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import { useState } from 'react';
 import VideoModal from './VideoModal';
