@@ -108,7 +108,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-carbon flex flex-col">
                  <Image 
                    src={homescreenImg} 
-                   alt="XplorerPE App Home Screen" 
+                   alt="XplorePE App Home Screen" 
                    fill 
                    className="object-cover opacity-90"
                  />

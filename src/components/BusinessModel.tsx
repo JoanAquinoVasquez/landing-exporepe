@@ -73,7 +73,7 @@ export default function BusinessModel() {
           <div className="space-y-6">
             <div className="bg-black/20 p-6 rounded-2xl border border-white/5">
               <div className="flex items-center justify-between mb-2">
-                <h4 className="font-display text-xl text-white">Partner XplorerPE</h4>
+                <h4 className="font-display text-xl text-white">Partner XplorePE</h4>
                 <span className="font-body text-xs font-bold px-2 py-1 bg-white/10 text-white rounded-full uppercase tracking-wider">Comisión CPA</span>
               </div>
               <p className="font-body text-white/50 text-sm">Paga solo cuando un cliente compra gracias a nosotros.</p>

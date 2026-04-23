@@ -33,7 +33,7 @@ export default function CTA() {
           </h2>
           
           <div className="font-body text-white/80 text-2xl lg:text-3xl max-w-2xl mb-16 font-bold uppercase tracking-widest flex flex-col items-center gap-4">
-             <span>Somos XplorerPE.</span>
+             <span>Somos XplorePE.</span>
              <span className="text-dorado-light">Gracias.</span>
           </div>
 

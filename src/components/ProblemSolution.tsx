@@ -54,7 +54,7 @@ export default function ProblemSolution() {
     },
     { 
       icon: Crown, 
-      title: 'Pasaporte XplorerPE', 
+      title: 'Pasaporte XplorePE', 
       desc: 'Acumula puntos por explorar y canjéalos en nuestra red de negocios aliados.',
       color: 'text-rojo'
     },
@@ -109,7 +109,7 @@ export default function ProblemSolution() {
             <span className="text-dorado-light">Es un guía que piensa contigo.</span>
           </h2>
           <p className="font-body text-white/60 text-lg leading-relaxed">
-            XplorerPE es tu guía digital con inteligencia artificial. Acompaña al turista en cada paso y conecta al negocio local con el viajero que camina a su lado.
+            XplorePE es tu guía digital con inteligencia artificial. Acompaña al turista en cada paso y conecta al negocio local con el viajero que camina a su lado.
           </p>
         </div>
 

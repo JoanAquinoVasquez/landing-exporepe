@@ -29,7 +29,7 @@ export default function Team() {
           className="w-12 h-1 bg-dorado mb-6" 
         />
         <h2 className="font-display text-4xl lg:text-6xl text-carbon uppercase tracking-tight mb-6 mt-8">
-          Detrás de <span className="text-dorado">XplorerPE</span>
+          Detrás de <span className="text-dorado">XplorePE</span>
         </h2>
         <p className="font-body text-carbon/60 max-w-2xl text-lg leading-relaxed">
           Un equipo multidisciplinario con algo en común:<br/>

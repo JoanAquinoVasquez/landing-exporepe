@@ -25,7 +25,7 @@ export default function Traction() {
     {
       icon: Percent,
       label: "Comisiones CPA",
-      desc: "Ingresos generados por Partners XplorerPE.",
+      desc: "Ingresos generados por Partners XplorePE.",
       value: "Métrica 3"
     }
   ];
